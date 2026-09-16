@@ -68,6 +68,6 @@ Feel free to contribute, suggest changes, or create your own version based on th
 
 Created by **Jhowpix**.
 
-<p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3697360752">steam</a><br> </p>
+<p><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3697360752">Steam</a><br> </p>
 Made for learning, experimentation and the DayZ modding community.
 
