@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<events>
+<!--        DONUTS EVENTS        
+
+This is a version for you to adapt to your server.
+
+I just tried to help by showing you where 
+you can add the zombies.
+You can configure it to your liking and place 
+or remove them wherever you want.
+
+-->
+
+    <!-- DONUTS INFECTED ARMY -->
+      <event name="InfectedArmy">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="15" type="ZmbM_PatrolNormal_Autumn"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PatrolNormal_Flat"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PatrolNormal_PautRev"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PatrolNormal_Summer"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_SoldierNormal"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_usSoldier_normal_Desert"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_usSoldier_normal_Woodland"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="5" type="Donuts_Armyofficer_No_Arms"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Zmb_usSoldierIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Zmb_usSoldierIV"/>
+        </children>
+    </event>
+    <event name="InfectedArmyHard">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PatrolNormal_Autumn"/>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbM_PatrolNormal_Flat"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PatrolNormal_PautRev"/>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbM_PatrolNormal_Summer"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_SoldierNormal"/>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbM_usSoldier_Heavy_Woodland"/>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbM_usSoldier_Officer_Desert"/>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbM_usSoldier_normal_Desert"/>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbM_usSoldier_normal_Woodland"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_soldier_normalIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_soldier_normalV"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_soldier_normalVI"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_soldier_normalIII"/>
+        </children>
+    </event>
+    <event name="InfectedCity">
+        <nominal>70</nominal>
+        <min>45</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_BlueCollarFat_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_CitizenANormal_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_CitizenANormal_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_CitizenBSkinny"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_Clerk_Normal_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_Clerk_Normal_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_Clerk_Normal_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_JournalistNormal_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_JournalistNormal_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_JournalistNormal_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_checks"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_white"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_yellow"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_SkaterYoung_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_SkaterYoung_Striped"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_SkaterYoung_Violet"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_SurvivorNormal_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_SurvivorNormal_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_SurvivorNormal_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CitizenASkinny_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CitizenASkinny_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CitizenASkinny_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CitizenBFat_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CitizenBFat_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CitizenBFat_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_ClerkFat_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_ClerkFat_Khaki"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_ClerkFat_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CommercialPilotOld_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CommercialPilotOld_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CommercialPilotOld_Olive"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Gamedev_Black"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Gamedev_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Gamedev_Gray"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_JournalistSkinny"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_MotobikerFat_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_SkaterYoung_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_SkaterYoung_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_SkaterYoung_Grey"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_CitizenIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_CitizenIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_HikerIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_hermitIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_joggerII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jogger"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_CitizenFI"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_CitizenF"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_Clerk"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Clown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbF_MilkMaidOldIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbF_MilkMaidOldII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbF_MilkMaidOld"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_journalistIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_journalistII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_journalist"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_OldManII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_FarmerI"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villager_Female_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerII_old_F"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villager_Male_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerI_old_M"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jacket_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jacket_Chest"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_JacketII_beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Hermit_Horror_Chest"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_prisoner_Waldo"/>
+        </children>
+    </event>
+    <event name="InfectedCityTier1">
+        <nominal>70</nominal>
+        <min>45</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_CitizenANormal_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_Clerk_Normal_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_JournalistNormal_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_black"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_ShortSkirt_stripes"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_SurvivorNormal_Orange"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CitizenASkinny_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_ClerkFat_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_CommercialPilotOld_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_MotobikerFat_Black"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_SkaterYoung_Blue"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_journalist"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_journalistII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_journalistIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_paramedicIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_hermitIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jogger"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_joggerII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villager_Female_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerII_old_F"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerIII_old_F"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villager_Male_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerI_old_M"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jacket_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jacket_Chest"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_JacketII_beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerIII_old_M"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Hermit_Horror_Chest"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_prisoner_Waldo"/>
+        </children>
+    </event>
+    <event name="InfectedFirefighter">
+        <nominal>60</nominal>
+        <min>35</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="20" type="ZmbM_FirefighterNormal"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_NBC_Yellow"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Zmb_FireFight"/>
+            <child lootmax="5" lootmin="0" max="0" min="20" type="Donuts_Zmb_FireFightI"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Firefighter_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Firefighter_Ritual"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_NBC"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_NBCI"/>
+        </children>
+    </event>
+    <event name="InfectedIndustrial">
+        <nominal>60</nominal>
+        <min>35</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_BlueCollarFat_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_BlueCollarFat_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_BlueCollarFat_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_BlueCollarFat_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_MechanicNormal_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_MechanicNormal_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_MechanicNormal_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_MechanicNormal_Orange"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_ConstrWorkerNormal_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_ConstrWorkerNormal_Black"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_ConstrWorkerNormal_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_ConstrWorkerNormal_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_HandymanNormal_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_HandymanNormal_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_HandymanNormal_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_HandymanNormal_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_HandymanNormal_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_HeavyIndustryWorker"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_MechanicSkinny_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_MechanicSkinny_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_MechanicSkinny_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_MechanicSkinny_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_OffshoreWorker_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_OffshoreWorker_Orange"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_OffshoreWorker_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_OffshoreWorker_Yellow"/>
+        </children>
+    </event>
+    <event name="InfectedMedic">
+        <nominal>70</nominal>
+        <min>45</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_DoctorSkinny"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbF_NurseFat"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbF_ParamedicNormal_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbF_ParamedicNormal_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbF_ParamedicNormal_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbF_PatientOld"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_DoctorFat"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_NBC_Yellow"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_ParamedicNormal_Black"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_ParamedicNormal_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_ParamedicNormal_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_ParamedicNormal_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="ZmbM_PatientSkinny"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_ZmbM_Doctor_No_Arms"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_ZmbM_Doctor_No_Arms2"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_ZmbM_Doctor_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_Bluecollar_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_ChefNoTshirt"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_Zmb_DoctorF"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_Zmb_DoctorFI"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_Zmb_ParamedicFIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_Zmb_ParamedicFIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_paramedicIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_paramedicIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_paramedicV"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_doctorIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_NBC"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_NBCI"/>  
+        </children>
+    </event>
+    <event name="InfectedNBC">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="100" type="ZmbM_NBC_Grey"/>
+        </children>
+    </event>
+    <event name="InfectedNBCYellow">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>0</active>
+        <children>
+            <child lootmax="3" lootmin="0" max="0" min="30" type="ZmbM_NBC_Yellow"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="3" lootmin="0" max="0" min="30" type="Donuts_NBC"/>
+            <child lootmax="3" lootmin="0" max="0" min="30" type="Donuts_NBCI"/>
+        </children>
+    </event>
+    <event name="InfectedPolice">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbF_PoliceWomanNormal"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PolicemanFat"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PolicemanSpecForce"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="ZmbM_PolicemanSpecForce_Heavy"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_policewomanIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_policewomanIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_policewomanV"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_policemanIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_policemanIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_policemanV"/>
+        </children>
+    </event>
+    <event name="InfectedPoliceHard">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="100" min="40" type="ZmbM_PolicemanSpecForce_Heavy"/>
+            <child lootmax="5" lootmin="0" max="10" min="0" type="ZmbM_PrisonerSkinny"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_paramedicIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_policewomanIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Zmb_CoverallsIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Zmb_CoverallsIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="10" type="Donuts_Zmb_CoverallsV"/>
+        </children>
+    </event>
+    <event name="InfectedPrisoner">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="100" type="ZmbM_PrisonerSkinny"/>
+        </children>
+    </event>
+    <event name="InfectedReligious">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="40" type="ZmbM_priestPopSkinny"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="20" type="Donuts_Zmb_Padre"/>
+            <child lootmax="5" lootmin="0" max="0" min="20" type="Donuts_Zmb_PadreI"/>
+            <child lootmax="5" lootmin="0" max="0" min="20" type="Donuts_Zmb_PadreII"/>
+        </children>
+    </event>
+    <event name="InfectedSanta">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="100" type="ZmbM_Santa"/>
+        </children>
+    </event>
+    <event name="InfectedSolitude">
+        <nominal>70</nominal>
+        <min>45</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_HikerSkinny_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_HikerSkinny_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_HikerSkinny_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_HikerSkinny_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_FishermanOld_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_FishermanOld_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_FishermanOld_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_FishermanOld_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HermitSkinny_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HermitSkinny_Black"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HermitSkinny_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HermitSkinny_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HikerSkinny_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HikerSkinny_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HikerSkinny_Yellow"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HunterOld_Autumn"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HunterOld_Spring"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HunterOld_Summer"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_HunterOld_Winter"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_HunterIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_HunterIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_HunterV"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_HunterF"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_HunterFI"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_HunterFII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_farmerIV"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_farmerIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Farmer_Ritual"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_fishermanIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Fisherman_Ritual"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_ClownII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Clown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Hermit_Horror_Chest"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jacket_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villager_Female_No_Legs"/>
+        </children>
+    </event>
+    <event name="InfectedSpooky">
+        <nominal>50</nominal>
+        <min>25</min>
+        <max>250</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>0</active>
+        <children>
+            <child lootmax="4" lootmin="0" max="0" min="50" type="ZmbF_MilkMaidOld_Black"/>
+            <child lootmax="4" lootmin="0" max="0" min="50" type="ZmbM_HandymanNormal_Beige"/>
+        </children>
+    </event>
+    <event name="InfectedVillage">
+        <nominal>70</nominal>
+        <min>45</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_JoggerSkinny_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_JoggerSkinny_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_JoggerSkinny_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_MilkMaidOld_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_MilkMaidOld_Black"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_MilkMaidOld_Grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_VillagerOld_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_VillagerOld_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbF_VillagerOld_White"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_FarmerFat_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_FarmerFat_Brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_FarmerFat_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_black"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_brown"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_greenchecks"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_grey"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_khaki"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_Jacket_stripes"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_JoggerSkinny_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_JoggerSkinny_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_VillagerOld_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="ZmbM_VillagerOld_White"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jogger"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_joggerII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_HikerIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Farmer_Ritual"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_OldMan"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Zmb_OldManI"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_Clerk"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_ZmbM_Chef"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villager_Female_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_jacket_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerII_old_F"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerIII_old_F"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerII_old_M"/>
+            <child lootmax="5" lootmin="0" max="0" min="2" type="Donuts_villagerIII_old_M"/>
+        </children>
+    </event>
+    <event name="InfectedVillageTier1">
+        <nominal>70</nominal>
+        <min>45</min>
+        <max>100</max>
+        <lifetime>3</lifetime>
+        <restock>0</restock>
+        <saferadius>100</saferadius>
+        <distanceradius>50</distanceradius>
+        <cleanupradius>100</cleanupradius>
+        <flags deletable="0" init_random="0" remove_damaged="1"/>
+        <position>player</position>
+        <limit>custom</limit>
+        <active>1</active>
+        <children>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbF_JoggerSkinny_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="5" type="ZmbF_MilkMaidOld_Green"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbF_VillagerOld_Blue"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_FarmerFat_Beige"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_Jacket_bluechecks"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_Jacket_magenta"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_JoggerSkinny_Red"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="ZmbM_VillagerOld_Green"/>
+            <!-- DONUTS ZOMBIES -->
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_jogger"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_joggerII"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_Zmb_HikerIII"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_Farmer_Ritual"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_Zmb_OldMan"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_Zmb_OldManI"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_Clerk"/>
+            <child lootmax="5" lootmin="0" max="0" min="3" type="Donuts_ZmbM_Chef"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_villager_Female_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_jacket_No_Legs"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_villagerII_old_F"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_villagerIII_old_F"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_villagerII_old_M"/>
+            <child lootmax="5" lootmin="0" max="0" min="4" type="Donuts_villagerIII_old_M"/>
+        </children>
+    </event>
+</events>
