@@ -68,5 +68,6 @@ Feel free to contribute, suggest changes, or create your own version based on th
 
 Created by **Jhowpix**.
 
+https://steamcommunity.com/sharedfiles/filedetails/?id=3697360752
 Made for learning, experimentation and the DayZ modding community.
 
